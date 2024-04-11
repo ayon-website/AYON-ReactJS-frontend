@@ -1,0 +1,22 @@
+@import url(/src/globalcss/animations.css);
+@import url(/src/globalcss/colors.css);
+
+.loading-end-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.loading-end-div{
+    animation: scaleAndFadeInOut 2s forwards;
+    display: flex;
+    flex-direction: column;
+    pointer-events: none;
+}
+
+.loading-end-container img{
+    height: 15vmin;
+    pointer-events: none;
+}

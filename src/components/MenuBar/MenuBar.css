@@ -1,0 +1,11 @@
+@import url(/src/globalcss/animations.css);
+@import url(/src/globalcss/colors.css);
+
+.menu-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(3vh + 30px);
+  width: 100vw;
+  background-color: var(--DRK-SECONDARY);
+}
