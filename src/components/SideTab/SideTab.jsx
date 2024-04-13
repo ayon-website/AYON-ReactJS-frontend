@@ -13,12 +13,12 @@ const SideTab = () => {
                 <text>UICK </text> 
                 <text>DATA</text>
             </span>
-            <button><STAR className="star"/>CHANNELS NEAR</button>
-            <button><STAR className="star"/>TOP 5 CHANNEL PROVIDERS</button>
-            <button><STAR className="star"/>TOP 5 PROVIDER COVERAGE</button>
-            <button><STAR className="star"/>TOP 5 LAUNCHING ROCKETS</button>
-            <button><STAR className="star"/>TOP 5 GROWING SATELLITES</button>
-            <button><STAR className="star"/>TOP 5 CHANNELS IN EACH LANGUAGE</button>
+            <button><STAR className="star"/>Channels near</button>
+            <button><STAR className="star"/>Top 5 channel providers</button>
+            <button><STAR className="star"/>Top 5 provider coverage</button>
+            <button><STAR className="star"/>Top 5 launching rockets</button>
+            <button><STAR className="star"/>Top 5 growing satellites</button>
+            <button><STAR className="star"/>Top 5 channels in each language</button>
         </div>
     );
 };

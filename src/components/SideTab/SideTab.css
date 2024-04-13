@@ -5,17 +5,13 @@
     flex-direction: column;
     height: 20em;
     width: fit-content;
-    background-color: var(--DRK-SECONDARY);
     border-radius: 30px;
-    margin-left: calc(15px + 2vw);
+    margin-left: calc(5px + 1vw);
+    margin-top: calc(-5px - 5vh);
     animation: fadeIn 1s forwards;
     text-align: start;
     justify-content: start;
     padding: 1em;
-    background-image: url('../../assets/AYON_BCKGRD\ 2.svg');
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    background-size: 80%;
 }
 
 .star {
@@ -26,10 +22,11 @@
 }
 
 .side-tab-parent text {
-    font-size: 0.7em;
+    font-size: 0.9em;
     color: var(--LGHT-PRIMARY);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Playfair Display', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 900;
+    font-style: italic;
 }
 
 .text-span {
@@ -39,8 +36,9 @@
 }
 
 #pl {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 0.9em;
+    font-family:'Playfair Display', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    font-size: 1.2em;
     font-weight: 800;
 }
 
@@ -49,7 +47,7 @@
     height: 2em;
     width: 20em;
     font-size: 0.6em;
-    font-weight: 700;
+    font-weight: 500;
     border-radius: 30px;
     padding: 0.5em;
 }
