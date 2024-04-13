@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import AYON_TYPE_DRK from 'assets/AYON_TYPE_WHTE.svg';
+import {ReactComponent as AYON_TYPE_WHTE} from 'assets/AYON_TYPE_WHTE.svg';
 import './LoadingEnd.css';
 
 const LoadingEnd = ({ onAnimationEnd }) => {
@@ -18,7 +18,7 @@ const LoadingEnd = ({ onAnimationEnd }) => {
   return (
     <div className="loading-end-container">
       <div ref={ref} className="loading-end-div">
-        <img src={AYON_TYPE_DRK} />
+        <AYON_TYPE_WHTE className="loading-end-logo" />
       </div>
     </div>
   );

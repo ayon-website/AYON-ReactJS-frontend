@@ -1,11 +1,15 @@
 import React from 'react';
 import './MenuBar.css';
+import AYON_TYPE_WTE from '../../assets/AYON_TYPE_WHTE.svg';
 
 const MenuBar = () => {
     return (
-        <div className="menu-bar">
-            {/* Add your menu items here */}
-        </div>
+        <span className='menu-bar-parent'>
+            <div className="menu-bar">
+                <img src={AYON_TYPE_WTE} alt='AYON_TYPE_WTE' />
+            </div>
+            <span className='menu-bar-spandrel'></span>
+        </span>
     );
 };
 

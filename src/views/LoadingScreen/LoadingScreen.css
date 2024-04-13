@@ -12,7 +12,8 @@
 
 
 .loading-screen-logo {
-    animation: fadeInOut 1s infinite;  
+    animation: fadeInOut 1.6s infinite;  
+    filter: drop-shadow(0px 0px 4px var(--ACCENT1));
     height: 15vmin;
     pointer-events: none;
 }
