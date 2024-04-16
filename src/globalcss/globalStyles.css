@@ -23,4 +23,47 @@ button:hover {
     text-shadow: 0px 2px 1px rgba(0,0,0,0.25);
 }
 
+button:active {
+    transition: 0.5s;
+    box-shadow: inset 40em -0em 0px -5em var(--ACCENT2);
+    color: var(--LGHT-PRIMARY);
+    filter: drop-shadow(0px 0px 1px var(--ACCENT1));
+    text-shadow: 0px 2px 1px rgba(0,0,0,0.25);
+}
+
 /**/
+
+/* Scroll bar theming */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--DRK-PRIMARY);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--DRK-TERIARY);
+    border-radius: 1em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--ACCENT2);
+    transition: 0.5s;
+}
+
+/* corner for scroll bar */
+
+::-webkit-scrollbar-corner {
+    background: var(--DRK-PRIMARY);
+}
+
+/* on firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--DRK-TERIARY) var(--DRK-PRIMARY);
+}
+
+
+

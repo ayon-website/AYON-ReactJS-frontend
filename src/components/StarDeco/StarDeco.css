@@ -1,0 +1,15 @@
+
+
+.starDeco-container {
+  position: absolute;
+  bottom: 20vh;
+  width: 10vw;
+  height: 10vh;
+  transform: rotate(24deg);
+}
+
+.starDeco-star {
+  filter: grayscale(80%); 
+  padding: 0.3em 0.9em;
+}
+
