@@ -7,9 +7,5 @@
     height: 100vh;
     width: 100vw;
 
-    background-image: url('../assets/AYON_BCKGRD\ 2.svg');
-    background-repeat: no-repeat;
-    background-position: bottom left;
-    background-size: 27%;
     overflow: hidden;
 }

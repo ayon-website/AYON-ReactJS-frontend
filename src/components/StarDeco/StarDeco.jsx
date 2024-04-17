@@ -1,27 +1,14 @@
 import React from 'react';
 import './StarDeco.css';
-import { ReactComponent as STAR } from '../../assets/AYON_STAR_D.svg';
 
 const StarDeco = () => {
 	return ( 
 		<>
-			<div className='starDeco-container'>
-			<div className='starDeco-subcontainer'>
-				<STAR className='starDeco-star'/>
-				<STAR className='starDeco-star'/>
-				<STAR className='starDeco-star'/>
-				<STAR className='starDeco-star'/>
-				<STAR className='starDeco-star'/>
-				<STAR className='starDeco-star'/>
-			</div>
-			<div className='starDeco-subcontainer'>
-				<STAR className='starDeco-star'/>
-				<STAR className='starDeco-star'/>
-				<STAR className='starDeco-star'/>
-				<STAR className='starDeco-star'/>
-				<STAR className='starDeco-star'/>
-				<STAR className='starDeco-star'/>
-			</div>
+		<div className='starDeco-container' style={{filter: 'grayscale(50%)'}}>
+		</div>
+		<div className='starDeco-container' style={{right: '5vw', bottom: '50px', filter: 'grayscale(50%)'}}>
+		</div>
+		<div className='starDeco-container' style={{left: '5vw', backgroundSize: '120%'}}>
 		</div>
 		</>
 	);

@@ -1,28 +1,16 @@
 
 
 .starDeco-container {
-  display: flex;
-  flex-direction: row;
   position: absolute;
   bottom: 0vh;
-  width: fit-content;
+  width: 150px;
   justify-content: center;
   align-items: center;
   height: 100vh;
   z-index: 0;
-  right: 1.3em;
-}
-
-.starDeco-star {
-  filter: grayscale(80%) brightness(10%); 
-  width: 10vw;
-  padding: 0.3em 0.9em;
-}
-
-.starDeco-subcontainer {
-  display: flex;
-  width: fit-content;
-  margin: -1rem;
-  flex-direction: column;
+  right: 0.3em;
+  background-image: url('../../assets/AYON_STAR_2.svg');
+  background-repeat: repeat-y;
+  background-size: auto;
 }
 
