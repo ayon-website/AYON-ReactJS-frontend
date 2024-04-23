@@ -6,13 +6,13 @@ import { getFilteredChannels, getNearestToLocation, getTop5Language, getTop5 } f
 
 
 const filteredChannelsData = await getFilteredChannels("", "", "", "");
-let data = filteredChannelsData;
 const dataChannelsNear = await getNearestToLocation(50, 0, 5);
 const top5Providers = await getTop5("top5Providers");
 const top5ProviderCoverage = await getTop5("top5ProviderCoverage");
 const top5LaunchingRockets = await getTop5("top5LaunchingRockets");
 const top5GrowingSatellites = await getTop5("top5GrowingSatellites");
 const top5ChannelsInLanguage = await getTop5Language("Eng");
+let data = filteredChannelsData;
 
 const DatabaseNav = () => {
 

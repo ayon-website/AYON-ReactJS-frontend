@@ -5,7 +5,7 @@ const endpoints = {
     top5GrowingSatellites: 'top5GrowingSatellites'
 };
 
-const API_BASE_URL = 'http://localhost:3001';
+const API_BASE_URL = 'https://ayon-node-js-service.vercel.app';
 
 async function getTop5(type) {
   return fetch(`${API_BASE_URL}/${type}`)
