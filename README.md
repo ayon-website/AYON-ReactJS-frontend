@@ -1,5 +1,18 @@
 ## SETUP
 
+In root directory run
+1) 
+```
+npm install
+```
+2) 
+```
+npm start
+```
+
+---
+## Available Scripts
+
 In the project directory, you can run:
 
 ### `npm start`
