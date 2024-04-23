@@ -1,21 +1,44 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Table.css';
 
-const Table = ({ data, columns }) => {
+const Table = ({ data: rawData }) => {
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        if (typeof rawData === 'string') {
+            setData(JSON.parse(rawData));
+        } else {
+            setData(rawData);
+        }
+    }, [rawData]);
+
+    if (!data.length) return null;
+
+    const headers = Object.keys(data[0]);
+
+    const isImageUrl = (url) => {
+        return typeof url === 'string' && url.match(/\.(jpeg|jpg|gif|png|svg)$/) != null;
+    };
+
     return (
-        <table>
+        <table className='db-table' >
             <thead>
-                <tr>
-                    {columns.map((column, index) => (
-                        <th key={index}>{column}</th>
+                <tr className='is-th'>
+                    {headers.map((header, index) => (
+                        <th key={index} >{header}</th>
                     ))}
                 </tr>
             </thead>
             <tbody>
-                {data.map((item, index) => (
-                    <tr key={index}>
-                        {columns.map((column, index) => (
-                            <td key={index}>{item[column]}</td>
+                {data.map((row, rowIndex) => (
+                    <tr key={rowIndex}>
+                        {headers.map((header, cellIndex) => (
+                            <td key={cellIndex}>
+                                {isImageUrl(row[header]) ? 
+                                    <img src={row[header]} alt={header} /> : 
+                                    row[header]
+                                }
+                            </td>
                         ))}
                     </tr>
                 ))}

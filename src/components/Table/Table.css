@@ -1,20 +1,76 @@
 
-.table {
-    width: 100%;
+@import url(../../globalcss/colors.css);
+
+
+.db-table {
+    width: fit-content;
     border-collapse: collapse;
+    font-family: 'Roboto', sans-serif;
 }
 
-.table th,
-.table td {
-    padding: 8px;
+.db-table img {
+    width: 6.5em;
+    margin: 0.5em;
+    filter: drop-shadow(0px 0px 2px rgba(0,0,0,0.25));
+    border-radius: 10px;
+}
+
+.db-table td { 
+    padding: 4px 8px;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    font-size: calc(6px + 0.5vw);
+    font-style: italic;
+    font-weight: 400;
 }
 
-.table th {
-    background-color: #f2f2f2;
+.db-table th {
+    padding: 8px;
+    text-align: center;
+    color: var(--LGHT-TERIARY);
+    background-color: var(--DRK-SECONDARY);
+    font-size: calc(6px + 0.5vw);
+    font-weight: 300;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    text-align: left;
 }
 
-.table tr:hover {
-    background-color: #f5f5f5;
+.db-table tr:nth-child(even) {
+    border-bottom: 1px solid var(--DRK-TERIARY);
+}
+
+.db-table tr:nth-child(odd) {
+    border-bottom: 1px solid var(--DRK-TERIARY);
+}
+
+.db-table tr:not(.is-th):hover {
+    box-shadow: inset 50em 0em 0px var(--LGHT-SECONDARY);
+    color: var(--DRK-TERIARY);
+    transition: 0.3s;
+}
+
+.db-table th:hover {
+    box-shadow: inset 50em 0em 0px var(--LGHT-SECONDARY);
+    color: var(--DRK-TERIARY);
+    transition: 0.3s;
+}
+
+.db-table tr:last-child td { 
+    border: none; 
+}
+
+.db-table tr:last-child td:first-child {
+    border-radius: 0 0 0 10px;
+}
+
+.db-table tr:last-child td:last-child {
+    border-radius: 0 0 10px 0;
+}
+
+.db-table tr:first-child th:first-child {
+    border-radius: 10px 0 0 0;
+}
+
+.db-table tr:first-child th:last-child {
+    border-radius: 0 10px 0 0;
 }

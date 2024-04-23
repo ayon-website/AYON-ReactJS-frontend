@@ -1,0 +1,21 @@
+
+.db-table-container {
+    width: fit-content;
+    align-self: center;
+    justify-self: center;
+    border-collapse: collapse;
+    height: fit-content;
+    z-index: 2;
+    padding: 10px;
+    overflow: auto;
+}
+
+.db-table-container button {
+    margin: 0 1em 0 0em;
+    height: fit-content;
+    width: max-content;
+    padding: 0.5em;
+    font-size: 0.5em;
+    font-weight: 500;
+    border-radius: 30px;
+}

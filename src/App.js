@@ -3,6 +3,8 @@ import LoadingScreen from 'views/LoadingScreen/LoadingScreen';
 import LoadingEnd from 'views/LoadingEnd/LoadingEnd';
 import React, { useEffect, useState } from 'react';
 import MainLayout from 'layouts/MainLayout';
+import { getFilteredChannels } from 'services/ayonNodeJS';
+
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -13,23 +15,8 @@ function App() {
   const [isEndAnimationFinished, setIsEndAnimationFinished] = useState(false);
 
   useEffect(() => { 
-    sleep(3000).then(() => {
+    sleep(1000).then(() => {
       setIsLoading(false);
-    });
-
-    const params =  new URLSearchParams({
-      longitude: 159,
-      lowerLim: 0,
-      upperLim: 10,
-    });
-
-    fetch(`http://localhost:8080/nearestToLocation?${params}`)
-    .then(response => response.text())  // Convert the response data to a string
-    .then(data => {
-      console.log(data);  // 'Hello, World!'
-    })
-    .catch((error) => {
-      console.error('Error:', error);
     });
 
   }, []);
@@ -43,6 +30,8 @@ function App() {
       return <MainLayout />;
     }
   };
+
+  
 
   return (
     <div className="App">
